@@ -1,13 +1,32 @@
-function hasTargetSum(array, target) {
-  // Write your algorithm here
-}
+
+  function hasTargetSum(array, target) {
+    // Write your algorithm here
+    // Initial position of the array.
+    for (let i=0;i<array.length;i++){
+      // Compare the position with the rest of the positions
+      for (let j=i+1;j<array.length;j++){
+        if(array[i] + array[j] === target){ //return true
+          return true
+        }
+      } 
+    }
+    return false
+  
+  
+  }
+
 
 /* 
   Write the Big O time complexity of your function here
+  
+  
 */
 
 /* 
   Add your pseudocode here
+  This  function takes two parameters, an array and a target number
+Return true if the any two numbers in the array add up to target.
+Or else return false.
 */
 
 /*
